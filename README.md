@@ -5,7 +5,7 @@
 
 ```javascript
     // плохо
-    #page-header {}
+    \#page-header {}
     
     // хорошо
     header {}
