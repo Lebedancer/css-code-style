@@ -3,9 +3,9 @@
 ## <a name='ids'>Id's</a>
 Не использовать id (\#) при написании стилей!!!
 
-```javascript
+```css
     // плохо
-    \#page-header {}
+    #page-header {}
     
     // хорошо
     header {}
