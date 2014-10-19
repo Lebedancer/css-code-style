@@ -1,4 +1,4 @@
-# Css style guide <span style="color:red">Alpha</span>
+# Css style guide (Alpha)
 
 ## <a name='ids'>Id's</a>
 Не использовать id (\#) при написании стилей!!!
