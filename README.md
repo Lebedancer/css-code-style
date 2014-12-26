@@ -47,19 +47,54 @@
     $('.js-saveButton')
 ```
 
-## <a name='ids'>Property-Value Pairs</a>
-Property-value pairs should be listed starting on the line after the opening curly brace. Each pair should:
-
-be on its own line;
-be indented one level;
-have a single space after the colon that separates the property name from the property value; and
-end in a semicolon.
+## <a name='ids'>Структура селектора</a>
+Каждая пара свойство-значение должно заканчиваться точкой с запятой.
 
 ```
-selector {
-  name: value;
-  name: value;
-}
+    //Плохо
+    selector {
+      name: value
+    }
+
+    //Хорошо
+    selector {
+      name: value;
+    }
+```
+
+- **Многострочные**: Каждое свойство должно находиться на своей строке, начиная со строки после фигурной скобки.
+Все свойства должны быть выровнены в один стобец.
+
+```
+    //Плохо
+    selector {
+    name: value;
+      name: value;
+    }
+
+    //Плохо
+    selector {    name: value;
+      name: value;
+    }
+
+    // Хорошо
+    selector {
+      name: value;
+      name: value;
+    }
+```
+
+- **Селекторы с одним свойством**: Данные селекторы допускается писать в одну строку.
+Свойство отбивается пробелами с обеих сторон.
+
+```
+    // Хорошо
+    selector {
+      name: value;
+    }
+
+     // Хорошо
+    selector { name: value; }
 ```
 
 
