@@ -238,6 +238,22 @@
    .mdSelect--largeSize {}
 ```
 
+- Элементы не вкладываются в родительский блок в препроцессорах.
+Для возможности повторного использования в других компонентах.
+```
+    // плохо
+    .mdSelect {
+        .mdSelect__textField {}
+        .mdSelect__dropdownList {}
+    }
+
+    // хорошо
+    .mdSelect {}
+    .mdSelect__textField {}
+    .mdSelect__dropdownList {}
+
+```
+
 ## <a name='whitespaces'>Отступы и пробелы</a>
 - Селекторы не отбиваются ничем.
 - Свойстава отбиваются 4 пробелами
