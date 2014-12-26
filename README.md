@@ -1,7 +1,7 @@
 # Css style guide (Alpha)
 
 ## <a name='ids'>Id's</a>
-Не использовать id (\#) при написании стилей!!!
+Не использовать id (\#) при написании стилей!!! Никогда, даже если не в моготу.
 
 ```
     // плохо
@@ -18,8 +18,22 @@
 ```
 
 ## <a name='ids'>naming/табы</a>
-lowercase, через - 
 
+- **Основная часть**: Основная часть класса называются в стиле lowerCamelCase.
+
+```
+    // плохо
+    .BadClass {}
+
+    // плохо
+    .bad-class {}
+
+    // плохо
+    .bad_class {}
+
+    // хорошо
+    .goodClass {}
+```
 
 ## <a name='ids'>Property-Value Pairs</a>
 Property-value pairs should be listed starting on the line after the opening curly brace. Each pair should:
