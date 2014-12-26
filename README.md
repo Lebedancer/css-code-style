@@ -35,6 +35,18 @@
     .goodClass {}
 ```
 
+- **Классы для js**: Старайтесь не использовать в js в качестве селлекторов классы, которые влияют на верстку.
+Если в js необходимо привязаться к какому-нибудь элементу по классу, то следует добавить элементу дополнительный класс
+с префиксом js.
+
+```
+    // плохо
+    $('.mdButton')
+
+    // хорошо
+    $('.js-saveButton')
+```
+
 ## <a name='ids'>Property-Value Pairs</a>
 Property-value pairs should be listed starting on the line after the opening curly brace. Each pair should:
 
