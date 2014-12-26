@@ -291,3 +291,17 @@
         display: block;
     }
 ```
+
+## <a name='ids'>!important</a>
+Использовать !important можно только в стилях ядра, для вещей которые никогда не должны быть переопределены
+```
+    // плохо
+    .table{
+        width: 100% !important;
+    }
+
+    // хорошо
+    .error{
+        color: red !important;
+    }
+```
