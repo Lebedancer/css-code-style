@@ -1,13 +1,13 @@
 # Css style guide (Beta)
 ## <a name='tableOfContents'>Оглавление</a>
-[Id's](#ids)
-[Наименование селекторов](#selectorsName)
-[Структура селектора](#selectorStructure)
-[Свойство-значение](#rule)
-[Структура пары свойство-значение](#ruleStructure)
-[Контроллы, компоненты, js](#controlsAndJs)
-[Отступы и пробелы](#whitespaces)
-[!important](#important)
+1. [Id's](#ids)
+1. [Наименование селекторов](#selectorsName)
+1. [Структура селектора](#selectorStructure)
+1. [Свойство-значение](#rule)
+1. [Структура пары свойство-значение](#ruleStructure)
+1. [Контроллы, компоненты, js](#controlsAndJs)
+1. [Отступы и пробелы](#whitespaces)
+1. [!important](#important)
 
 
 ## <a name='ids'>Id's</a>
