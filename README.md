@@ -8,6 +8,7 @@
 1. [Контроллы, компоненты, js](#controlsAndJs)
 1. [Отступы и пробелы](#whitespaces)
 1. [!important](#important)
+1. [Структура препроцессора(less/sass)](#preprocessor)
 
 
 ## <a name='ids'>Id's</a>
