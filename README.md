@@ -67,7 +67,7 @@
     .error {}
 ```
 
-- Названия клссов должны быть абстрактны и выражать смысловое нежели визуальное значение.
+- Названия классов должны быть абстрактны и выражать смысловое нежели визуальное значение.
 ```
     // плохо
     .greenButton {}
@@ -313,5 +313,85 @@
     // хорошо
     .error{
         color: red !important;
+    }
+```
+
+## <a name='preprocessor'>Структура препроцессора(less/sass)</a>
+- Вложеннные селекторы отбиваются 4 пробелами.
+```
+    // плохо
+    .table{
+    ∙∙tr {
+        width: 100% !important;
+      }
+    }
+
+    // хорошо
+    .table{
+    ∙∙∙∙tr {
+            width: 100% !important;
+        }
+    }
+```
+
+- Избегайте неоправданной вложенности.
+```
+    // плохо
+    .table{
+        tbody {
+            tr {
+                td {
+                    .button{}
+                }
+            }
+        }
+    }
+
+    // хорошо
+    .table .button{}
+```
+
+- Используйте вложенность для похожих селекторов.
+```
+    // плохо
+    .table > thead > tr > th {}
+    .table > thead > tr > td {}
+
+    // хорошо
+    .table > thead > tr {
+      > th { }
+      > td { }
+    }
+```
+
+- Общие цвета, размеры и прочие хаарактеристики следует присваивать переменным.
+Переменные пишутся lowerCamelCase'ом.
+```
+    // плохо
+    .error { color: #CB3338; }
+    .closeLink { background: #CB3338; }
+
+    // хорошо
+    @redColor: #CB3338 ;
+    .error { color: @redColor; }
+    .closeLink { background: @redColor; }
+```
+
+- Для однотипных кусков свойств целесообразно использовать миксины.
+```
+    // плохо
+    .block {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    // хорошо
+    .box-shadow(@shadow) {
+      -webkit-box-shadow: @shadow;
+      box-shadow: @shadow;
+    }
+
+    .block {
+        .box-shadow(none);
     }
 ```
