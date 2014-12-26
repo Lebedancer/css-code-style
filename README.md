@@ -14,7 +14,7 @@
     [aria-role=header] {}
     
     // хорошо
-    .page-header {}
+    .pageHeader {}
 ```
 
 ## <a name='ids'>Наименование</a>
