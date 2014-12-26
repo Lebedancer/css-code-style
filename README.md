@@ -155,19 +155,26 @@
     // хорошо
     color: #fe9848
 ```
+- Используйте одинарные ('') вместо двойных("") ковычек.
+```
+    // плохо
+    font-family: "open sans", arial, sans-serif;
 
+    // хорошо
+    font-family: 'open sans', arial, sans-serif;
+```
 
 ## <a name='ids'>Структура пары свойство-значение</a>
 Каждая пара свойство-значение должно заканчиваться точкой с запятой.
 ```
     //Плохо
     selector {
-      name: value
+        name: value
     }
 
     //Хорошо
     selector {
-      name: value;
+        name: value;
     }
 ```
 
@@ -177,18 +184,18 @@
     //Плохо
     selector {
     name: value;
-      name: value;
+        name: value;
     }
 
     //Плохо
     selector {    name: value;
-      name: value;
+        name: value;
     }
 
     // Хорошо
     selector {
-      name: value;
-      name: value;
+        name: value;
+        name: value;
     }
 ```
 
@@ -197,7 +204,7 @@
 ```
     // Хорошо
     selector {
-      name: value;
+        name: value;
     }
 
      // Хорошо
@@ -216,38 +223,72 @@
     $('.js-saveButton')
 ```
 
-## <a name='ids'>проблемы/табы</a>
-
-## <a name='ids'>префиксы/табы</a>
-
-## <a name='ids'>многострочные</a>
-
-## <a name='ids'>Selectors</a>
-Selectors should be on a single line, with a space after the last selector, followed by an opening brace. A selector block should end with a closing curly brace that is unindented and on a separate line. A blank line should be placed between each selector block. Selectors should never be indented.
-
-```selector {
-   }
-   
-   selector {
-   }
-   ```
-   
-   Multiple selectors should each be on a single line, with no space after each comma.
- ```  
-   selector1,
-   selector2,
-   selector3,
-   selector4 {
-   }
-   ```
-## <a name='ids'>велчины</a>
-When denoting the dimensions — that is, the width or height — of an element or its margins, borders, or padding, specify the units in either em, px, or %. If the value of the width or height is 0, do not specify units.
+## <a name='ids'>Отступы и пробелы</a>
+- Селекторы не отбиваются ничем.
+- Свойстава отбиваются 4 проблами
 ```
-width: 12px;  /* Okay */
-  width: 12%;   /* Okay */
-  width: 12em;  /* Okay */
-  width: 12rem; /* Okay */
-  width: 0;     /* Okay */
-  width: 12;    /* Not okay */
-  width: 0px;   /* Not okay */
-  ```
+    // плохо
+    .selector {
+    ∙∙display: block;
+    }
+
+    // плохо
+    .selector {
+    display: block;
+    }
+
+    // хорошо
+    .selector {
+    ∙∙∙∙display: block;
+    }
+```
+
+- Между многострочными селекторами должна быть пустая строка.
+```
+    // плохо
+    .selector{
+        display: block;
+        color: #fff;
+    }
+    .selector2{
+        display: block;
+        color: #fff;
+    }
+
+    // хорошо
+    .selector{
+        display: block;
+        color: #fff;
+    }
+
+    .selector2{
+        display: block;
+        color: #fff;
+    }
+```
+
+- Перед открывающейся фигурной скобкой ставится пробел.
+```
+    // плохо
+    .selector{
+        display: block;
+    }
+
+    // хорошо
+    .selector {
+        display: block;
+    }
+```
+
+- Между свойством и значением ставится пробел.
+```
+    // плохо
+    .selector{
+        display:block;
+    }
+
+    // хорошо
+    .selector {
+        display: block;
+    }
+```
