@@ -334,7 +334,7 @@
 
     // хорошо
     .error{
-        color: red !important;
+        color: #CB3338 !important;
     }
 ```
 
